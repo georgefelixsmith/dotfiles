@@ -1,0 +1,19 @@
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH="/Users/shane/.boot2docker/certs/boot2docker-vm"
+export DOCKER_TLS_VERIFY=1
+
+export PATH="/Users/shane/.rbenv/shims:${PATH}"
+rbenv() {
+  typeset command
+  command="$1"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+    rehash|shell)
+      eval `rbenv "sh-$command" "$@"`;;
+    *)
+      command rbenv "$command" "$@";;
+  esac
+}
