@@ -1,0 +1,15 @@
+---
+authentication:
+  client_key: 4548af3e6bea6b371bf7326051865bd7
+  api_key: ee74fd8900150c04e70ab74c8691afb3
+ssh:
+  ssh_user: shane
+  ssh_key_path: "/Users/shane/.ssh/id_rsa"
+  ssh_port: '22'
+defaults:
+  region: '1'
+  image: '350076'
+  size: '66'
+  ssh_key: ''
+  private_networking: 'false'
+  backups_enabled: 'false'
