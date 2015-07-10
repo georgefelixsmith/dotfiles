@@ -75,8 +75,7 @@ if executable('ag')
 endif
 
 " Color scheme
-set background=light
-colorscheme pencil
+set background=dark
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 highlight clear SignColumn
@@ -132,6 +131,15 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+vnoremap <up> <nop>
+vnoremap <down> <nop>
+vnoremap <left> <nop>
+vnoremap <right> <nop>
+
 " vim-rspec mappings
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
@@ -163,6 +171,11 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 
 " Always use vertical diffs
 set diffopt+=vertical
+
+map <silent> <Leader>nt :NERDTreeToggle<CR>
+map <silent> <Leader>nr :NERDTree<CR>
+map <silent> <Leader>nf :NERDTreeFind<CR>
+let NERDTreeShowHidden=1
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
