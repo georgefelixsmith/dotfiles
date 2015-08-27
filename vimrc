@@ -166,4 +166,9 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-colorscheme base16-default
+set t_Co=256
+
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+colorscheme wombat256
