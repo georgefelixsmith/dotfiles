@@ -169,9 +169,9 @@ endif
 set t_Co=256
 
 syntax enable
-set background=dark
 let g:solarized_termcolors=256
 colorscheme wombat256
+set background=light
 
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
