@@ -129,6 +129,17 @@ nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
 
+" vim-test mappings
+nnoremap <silent> <Leader>t :TestNearest<CR>
+nnoremap <silent> <Leader>s :TestFile<CR>
+nnoremap <silent> <Leader>l :TestLast<CR>
+
+" make test commands execute in a tmux pane
+let test#strategy = "vimux"
+let test#ruby#rspec#executable = 'bundle exec rspec'
+let g:VimuxOrientation = "h"
+let g:VimuxHeight = "40"
+
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<space>
 
@@ -172,10 +183,6 @@ syntax enable
 let g:solarized_termcolors=256
 colorscheme wombat256
 set background=light
-
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
