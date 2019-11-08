@@ -179,10 +179,10 @@ endif
 
 set t_Co=256
 
+set background=light
 syntax enable
 let g:solarized_termcolors=256
 colorscheme wombat256
-set background=light
 
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
