@@ -3,6 +3,7 @@ eval "$(rbenv init -)"
 alias be='bundle exec'
 alias weather='curl wttr.in/london'
 alias hangups='hangups --discreet-notifications'
+alias ll='ls -lhra'
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
