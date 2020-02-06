@@ -18,13 +18,14 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/nerdtree'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'posva/vim-vue'
 Plugin 'rking/ag.vim'
 Plugin 'janko/vim-test'
 Plugin 'benmills/vimux'
+Plugin 'tonekk/vim-binding-pry'
+Plugin 'ryanoasis/vim-devicons'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local

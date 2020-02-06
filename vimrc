@@ -76,6 +76,8 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+:let g:ctrlp_match_window = 'min:1,max:35'
+
 " Color scheme
 set background=dark
 
@@ -177,19 +179,18 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-set t_Co=256
+" set t_Co=256
 
 set background=light
 syntax enable
-let g:solarized_termcolors=256
-colorscheme wombat256
+" let g:solarized_termcolors=256
+colorscheme wombat256mod
 
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 
 " air-line
 let g:airline_powerline_fonts = 1
-
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -222,4 +223,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-:set spell spelllang=en_gb
+let g:webdevicons_enable_nerdtree = 0
+
+set termguicolors
