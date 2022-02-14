@@ -79,7 +79,7 @@ endif
 :let g:ctrlp_match_window = 'min:1,max:35'
 
 " Color scheme
-set background=dark
+" set background=dark
 
 set colorcolumn=+1
 
@@ -181,7 +181,7 @@ endif
 
 " set t_Co=256
 
-set background=light
+set background=dark
 syntax enable
 " let g:solarized_termcolors=256
 colorscheme wombat256mod
@@ -225,4 +225,4 @@ let g:airline_symbols.linenr = ''
 
 let g:webdevicons_enable_nerdtree = 0
 
-set termguicolors
+let &t_ut=''

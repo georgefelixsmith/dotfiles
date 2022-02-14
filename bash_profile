@@ -18,6 +18,7 @@ alias 6='osascript -e "set Volume 6"'
 alias 7='osascript -e "set Volume 7"'
 alias 8='osascript -e "set Volume 8"'
 alias 9='osascript -e "set Volume 9"'
+alias cat='bat'
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
@@ -28,3 +29,7 @@ export PS1="\[\033[33;1m\]\w\[\033[m\]\[\033[36m\]\$(git branch 2>/dev/null | gr
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+ulimit -n 10240

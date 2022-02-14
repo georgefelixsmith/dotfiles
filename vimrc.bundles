@@ -26,6 +26,9 @@ Plugin 'janko/vim-test'
 Plugin 'benmills/vimux'
 Plugin 'tonekk/vim-binding-pry'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'xuyuanp/nerdtree-git-plugin'
+Plugin 'doctest-syntax'
+Plugin 'pangloss/vim-javascript'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
