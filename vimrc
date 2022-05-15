@@ -226,3 +226,7 @@ let g:airline_symbols.linenr = ''
 let g:webdevicons_enable_nerdtree = 0
 
 let &t_ut=''
+
+let g:UltiSnipsExpandTrigger="<S-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
