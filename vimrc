@@ -230,3 +230,5 @@ let &t_ut=''
 let g:UltiSnipsExpandTrigger="<S-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+:set autoread | au CursorHold * checktime | call feedkeys("lh")
